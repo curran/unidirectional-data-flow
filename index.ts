@@ -21,10 +21,7 @@ export const unidirectionalDataFlow = <T = {}>({
   //
   // The `app` function should render the app in the container, and should call
   // `setState` whenever it wants to update the state.
-  app: (
-    container: HTMLElement,
-    { state, setState }: { state: T; setState: (next: (state: T) => T) => void }
-  ) => void;
+  app: App<T>;
 
   // The initial state of the app (optional).
   // Defaults to an empty object.
@@ -45,9 +42,14 @@ export const unidirectionalDataFlow = <T = {}>({
   render();
 
   return {
-    hotReloadApp: (newApp) => {
+    hotReloadApp: (newApp: App<T>) => {
       currentApp = newApp;
       render();
     },
   };
 };
+
+type App<T> = (
+  container: HTMLElement,
+  { state, setState }: { state: T; setState: (next: (state: T) => T) => void }
+) => void;
