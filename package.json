@@ -1,0 +1,23 @@
+{
+  "name": "unidirectional-data-flow",
+  "version": "0.0.1",
+  "description": "Unidirectional Data Flow for Vanilla JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curran/unidirectional-data-flow.git"
+  },
+  "author": "Curran Kelleher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/curran/unidirectional-data-flow/issues"
+  },
+  "homepage": "https://github.com/curran/unidirectional-data-flow#readme",
+  "devDependencies": {
+    "jsdom": "^22.1.0",
+    "vitest": "^0.34.1"
+  }
+}
