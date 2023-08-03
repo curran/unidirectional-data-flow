@@ -6,12 +6,12 @@ test("starts state with empty object", () => {
   const {
     window: { document },
   } = new JSDOM();
-  let state;
+  let latestState: {} | undefined = undefined;
   unidirectionalDataFlow({
     container: document.body,
-    app: (container, { state: s, setState }) => {
-      state = s;
+    app: (_container, { state }) => {
+      latestState = state;
     },
   });
-  expect(state).toEqual({});
+  expect(latestState).toEqual({});
 });
