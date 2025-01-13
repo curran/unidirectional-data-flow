@@ -1,6 +1,6 @@
 {
   "name": "unidirectional-data-flow",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple implementation of the unidirectional data flow pattern",
   "main": "src/index.js",
   "type": "module",
