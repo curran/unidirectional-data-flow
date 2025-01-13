@@ -1,12 +1,15 @@
 {
   "name": "unidirectional-data-flow",
   "version": "0.0.1",
-  "description": "Unidirectional Data Flow for Vanilla JavaScript",
-  "main": "dist/index.js",
+  "description": "A simple implementation of the unidirectional data flow pattern",
+  "main": "src/index.js",
   "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "module": "./src/index.js",
   "scripts": {
-    "test": "vitest",
-    "build": "tsc && vite build --ssr index.ts"
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -19,9 +22,7 @@
   },
   "homepage": "https://github.com/curran/unidirectional-data-flow#readme",
   "devDependencies": {
-    "jsdom": "^22.1.0",
-    "vitest": "^0.34.1",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vitest": "^2.1.8",
+    "vite": "^6.0.7"
   }
 }
