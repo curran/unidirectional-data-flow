@@ -1,6 +1,6 @@
 # unidirectional-data-flow
 
-A simple implementation of the unidirectional data flow pattern.
+A simple implementation of the unidirectional data flow pattern for state management in JavaScript.
 
 This implementation provides a minimal framework for developing interactive applications using vanilla JavaScript. The idea behind this library is to enable development of small isolated interactive applications using consistent patterns and minimal dependencies. Applications developed in this way could be ideal reference examples because when implemented in this way, they can easily be wrapped or packaged as components in various frameworks.
 
