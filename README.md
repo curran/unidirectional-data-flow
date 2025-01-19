@@ -2,6 +2,8 @@
 
 A simple implementation of the unidirectional data flow pattern for state management in JavaScript.
 
+![Image](https://github.com/user-attachments/assets/584b2ca3-8360-428d-9511-272fbb2698f0)
+
 This implementation provides a minimal framework for developing interactive applications using vanilla JavaScript. The idea behind this library is to enable development of small isolated interactive applications using consistent patterns and minimal dependencies. Applications developed in this way could be ideal reference examples because when implemented in this way, they can easily be wrapped or packaged as components in various frameworks.
 
 ## Features
